@@ -21,7 +21,7 @@ const App = () => {
     <div>
       <Header/>
       <Search dispatch={dispatch}/>
-      <Filter filter={state.filter}/>
+      <Filter filter={state.filter} dispatch={dispatch}/>
       <div className='todo-list'>
         {
         filteredtodos.map((todo)=>(

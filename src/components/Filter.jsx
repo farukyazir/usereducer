@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Filter = ({filter}) => {
+const Filter = ({filter,dispatch}) => {
   return (
     <div className='filter'>
         <label><strong>Filter by Status</strong></label>
         <select value={filter} onChange={(e)=>{
-          dispatchEvent({
+          dispatch({
             type:"SET_FILTER",
             payload:e.target.value
           })
